@@ -6,22 +6,39 @@
   font-family: 'Mulish', sans-serif;
   box-sizing: border-box;
 }
+html {
+  background: center/cover no-repeat
+    url('./img/wallpaperflare.com_wallpaper.jpg');
+}
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  width: 800px;
   padding: 20px;
+  color: #fff;
 }
 .header-container {
   display: flex;
   flex-direction: row;
-  width: 40%;
+  width: inherit;
   justify-content: space-between;
+  padding: 0 10px 15px 10px;
+  border-bottom: 3px solid #fff;
 }
 .current-container {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: row;
   padding: 15px;
-  border: 1px solid transparent;
+  border: 5px solid transparent;
   border-radius: 5px;
   height: 90px;
   width: 380px;
@@ -38,8 +55,8 @@ body {
 }
 .hr {
   width: 2px;
-  height: 1rem;
-  background-color: white;
+  height: 1.2rem;
+  background-color: #fff;
   margin: 0 5px;
 }
 .current-temp,
@@ -56,4 +73,30 @@ body {
 }
 i {
   font-style: normal;
+}
+.week-analytics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+}
+.box {
+  height: 100px;
+  width: 120px;
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.date {
+  font-size: 1rem;
+}
+.temp {
+  margin-top: 5px;
+  font-size: 2rem;
+  flex: 1;
 }
