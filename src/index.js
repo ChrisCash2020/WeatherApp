@@ -67,10 +67,8 @@ let startWeatherApp = (city) => {
     );
     const coorData = await response.json();
     if (coorData.cod === '404') {
-      console.log('eerrror');
       searchDiv.classList.add('invalid');
     } else {
-      console.log(searchDiv);
       searchDiv.classList.remove('invalid');
       let lat = coorData.coord.lat;
       let lon = coorData.coord.lon;
